@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tally Private - weekly recap</title>
+    <style>
+      /* Intentional, for Impeccable's test drive: every flaw below is planted for the review to find. */
+      :root {
+        --paper: #fbf8f2;
+        --card: #ffffff;
+        --ink: #1f2421;
+        --accent: #2f5d50;
+      }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+        line-height: 1.5;
+      }
+      main {
+        padding: 4rem 0 6rem;
+      }
+      h1 {
+        margin: 0 1.25rem 1rem;
+        font-family: Fraunces, Georgia, serif;
+        font-weight: 600;
+        font-size: 2.5rem;
+        /* Intentional, for Impeccable's test drive: gradient text on the heading. */
+        background: linear-gradient(90deg, #2f5d50, #d14fa0);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      .intro {
+        /* Intentional, for Impeccable's test drive: body text flush with the viewport edge, no background. */
+        margin: 0 0 1.5rem;
+        padding: 0;
+      }
+      .note {
+        margin: 0 1.25rem 1.5rem;
+        /* Intentional, for Impeccable's test drive: light grey text, well under 4.5:1 on the paper. */
+        color: #c9c9c9;
+      }
+      .stat {
+        margin: 0 1.25rem 1.5rem;
+        padding: 1rem 1.25rem;
+        background: var(--card);
+        border: 1px solid #e4ded2;
+        border-radius: 10px;
+        /* Intentional, for Impeccable's test drive: a colour that is not in DESIGN.md's palette. */
+        border-left: 6px solid #7a3fd1;
+      }
+      .bar {
+        height: 8px;
+        width: 40%;
+        background: var(--accent);
+        border-radius: 4px;
+        /* Intentional, for Impeccable's test drive: transition on a layout property. */
+        transition: width 0.3s;
+      }
+      .stat:hover .bar {
+        width: 90%;
+      }
+      .links {
+        margin: 0 1.25rem;
+      }
+      .links a {
+        color: var(--accent);
+        /* Intentional, for Impeccable's test drive: link text under the 11px floor. */
+        font-size: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Your week on the list</h1>
+      <p class="intro">
+        Here is a quiet look back at the things you ticked off this week, kept as plain as the list itself.
+      </p>
+      <p class="note">Nothing here leaves your own list; only you can see it.</p>
+      <section class="stat" aria-label="Finished items">
+        <p>Finished this week: 12 of 15</p>
+        <div class="bar"></div>
+      </section>
+      <p class="links"><a href="/">Back to Tally Private</a></p>
+    </main>
+  </body>
+</html>

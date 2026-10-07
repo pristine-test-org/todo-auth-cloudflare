@@ -67,6 +67,10 @@ export default function SignIn({ configError }: { configError: string | null }) 
       </form>
 
       <p className="fineprint">Accounts are set up by the list's owner; there is no sign-up.</p>
+
+      <p className="fineprint">
+        <a href="/impeccable-test-drive.html">See a weekly recap</a>
+      </p>
     </main>
   );
 }
