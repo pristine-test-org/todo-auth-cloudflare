@@ -6,7 +6,7 @@ remove it. Each person sees only their own list.
 Tally Private is a static React app with Supabase behind it: Supabase Auth (email and password)
 for sign-in, and a `private_todos` table whose row level security keeps every row to its owner.
 
-Live site: (set after the first deploy)
+Live site: https://todo-auth-cloudflare.pages.dev/
 
 ## Test accounts
 
